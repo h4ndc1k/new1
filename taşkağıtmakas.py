@@ -19,12 +19,10 @@ for i in range(raund):
     you=input()
     you=you.lower()
     if you in actions:
-
       if you==actions[index]:
          print( "Tie!")
          Tie+=1
          print(" ")
-
       elif you=="rock" and actions[index]=="scissor":
          print("computer choose: ",actions[index])
          print("you won!")
@@ -41,18 +39,14 @@ for i in range(raund):
          your_score+=1
          print(" ")
       else:
-
          print("computer choose: ",actions[index])
          print("computer won :(")
          c_score+=1
          print(" ")
-
     else:
        print("wrong choice,be careful :( ")
        your_score-=1
        c_score+=1
        print(" ")
-
-
 print("your score:", your_score, "\ncomputer:", c_score,"\nTie:",Tie)
 
