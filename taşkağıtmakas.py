@@ -16,8 +16,7 @@ Tie=0
 for i in range(raund):
     index= random.randint(0,2)
     print(i+1,")","rock,paper or scissor? ")
-    you=input()
-    you=you.lower()
+    you=input().lower()
     if you in actions:
       if you==actions[index]:
          print( "Tie!")
